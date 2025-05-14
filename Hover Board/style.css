@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --item-size: 17px;
+    --item-hover-color: rgb(40, 255, 83);
+}
+
+body {
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.item {
+    width: var(--item-size);
+    height: var(--item-size);
+    background: #1d1d1d;
+    transition: all 4s ease;
+}
+
+.item:hover {
+    background-color: var(--item-hover-color);
+    box-shadow: 0 0 3px var(--item-hover-color), 0 0 10px var(--item-hover-color);
+    transition: all 0.01s ease;
+}
