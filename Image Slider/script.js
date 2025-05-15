@@ -18,3 +18,8 @@ prevBtn.addEventListener('click', () => {
     idx--;
     changeSlide();
 });
+
+nextBtn.addEventListener('click', () => {
+    idx++;
+    changeSlide();
+});
