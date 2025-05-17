@@ -9,10 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .slider {
-    width: 500px;
+    max-width: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -24,6 +25,7 @@ body {
 .image-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
 }
 
 .image-container img {
